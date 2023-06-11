@@ -29,24 +29,14 @@ export default class App extends Component {
   render() {
     const { fontLoaded } = this.state;
     if (fontLoaded) {
-      return <AppContainer />;
+      return //complete o código
     }
     return null;
   }
 }
 
 const AppSwitchNavigator = createSwitchNavigator(
-  {
-    Login: {
-      screen: LoginScreen
-    },
-    BottomTab: {
-      screen: BottomTabNavigator
-    }
-  },
-  {
-    initialRouteName: "Login"
-  }
+  //complete o código
 );
 
 const AppContainer = createAppContainer(AppSwitchNavigator);
