@@ -29,7 +29,7 @@ export default class RideScreen extends Component {
       scanned: false,
       bikeType: "",
       userName: "",
-      email: firebase.auth().currentUser.email
+     // Complete o código
     };
   }
 
@@ -173,12 +173,9 @@ export default class RideScreen extends Component {
   };
 
   checkUserEligibilityForStartRide = async (userId, email) => {
-    const userRef = await db
-      .collection("users")
-      .where("id", "==", userId)
-      .where("email_id", "==", email)
-      .get();
-
+   // Complete o código
+   
+    
     var isUserEligible = false;
     if (userRef.docs.length == 0) {
       this.setState({
