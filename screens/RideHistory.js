@@ -18,7 +18,7 @@ export default class RideHistoryScreen extends Component {
       allTransactions: [],
       lastVisibleTransaction: null,
       searchText: "",
-      email: firebase.auth().currentUser.email
+     //Complete o código.
     };
   }
   componentDidMount = async () => {
